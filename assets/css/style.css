@@ -1,0 +1,65 @@
+h1 {
+  text-align: center;
+  background-color: aliceblue;
+  font-family: 'Caveat Brush', cursive;
+}
+
+
+h5 {
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+p {
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+
+  /* font-size: 20px; */
+  /* font-weight: 200; */
+}
+
+#you-win {
+  text-align: center;
+  /* display: none; */
+  visibility: hidden;
+  width: 79%;
+}
+
+#wrong-key,
+#new-letter {
+  text-align: center;
+  visibility: hidden;
+  width: 70%;
+}
+
+#col-compGuess {
+  color: red;
+  background: #ffffff;
+  text-align: center;
+}
+
+#col-guess {
+  color: red;
+  text-align: center;
+}
+
+#col-guessLeft {
+  background: #ffffff;
+  text-align: center;
+}
+
+#col-win {
+  background: #ffffff;
+  text-align: center;
+}
+
+#col-loss {
+  background: #ffffff;
+  text-align: center;
+}
+
+#col-guessSoFar {
+  background: #ffffff;
+  text-align: center;
+}

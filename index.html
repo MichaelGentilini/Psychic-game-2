@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Waiting+for+the+Sunrise" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Psychic Game (Basic)</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>The Psychic Game</h1>
+    <h5>I'm thinking of a letter between "e" and "z"</h5>
+    <p> Press any letter on the keyboard</p>
+
+
+    <table class="table">
+      <tbody>
+        <th scope="row">Your Selection</th>
+        <td id="col-guess"><span id="user-guess"></span></td>
+        </tr>
+        <!-- Track the number of times the user has guessed correctly -->
+        <tr>
+          <th scope="row">Wins:</th>
+          <td id="col-win">0</td>
+
+        </tr>
+        <!-- Track the number of times the user has guessed incorrectly -->
+
+        <tr>
+          <th scope="row">Losses:</th>
+          <td id="col-loss">0</td>
+        </tr>
+
+        <!-- Track the number of times the user has guesses left (10 total) -->
+
+        <tr>
+          <th scope="row">Guesses Left:</th>
+          <td id="col-guessLeft">10</td>
+        </tr>
+
+        <!-- Show the letters that have been used -->
+        <tr>
+          <th scope="
+            row">Guesses so far:</th>
+          <td id="col-guessSoFar">~~</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container alert alert-success" id="you-win" role="alert">
+    You're a pretty good guesser!
+  </div>
+
+  <div class="container alert alert-info" id="new-letter" role="alert">
+    <strong>Hey, you've used that one before!
+  </div>
+
+  <div class="container alert alert-warning" id="wrong-key" role="alert">
+    Please select the letters a - z only! </div>
+
+  <p></p>
+
+  <script src="assets/javascript/game.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+
+</body>
+
+</html>
